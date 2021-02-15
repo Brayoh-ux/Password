@@ -3,7 +3,6 @@ import random
 from user import User
 from credetials import Credentials
 
-
 def main():
     while True:
         print('Welcome to password locker \n Default username: Brian, \n Default Password: 1234')
