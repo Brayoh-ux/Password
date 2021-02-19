@@ -47,16 +47,26 @@ def main():
                 print(f'welcome : {entered_user_name} to your account \n')
                 print('**********************************************')
                 print('login successful. \n')
-                print('Add in your credentials to save them.')
-                f = open("user.txt", "a")
-                f.write(input('\n Your account name : \n') + ', ' + input('Your username: \n')+ ', ' + input('Your account password: \n') + '\n')
-                f.close()
+                print('Do you want to view or add new Data? (vw / ad) \n')
                 
-                print('*****-----------------******* \n YOUR CREDENTIALS.')
-                f = open("user.txt", "r")
-                print(f.read())
-                print('*************************')
-                break
+                key_word = input().lower()
+                if key_word == 'ad':
+                    print('Add in your credentials to save them.\n Your inputs will be saved on the last line..')
+                    f = open("user.txt", "a")
+                    f.write(input('\n Your account name : \n') + ', ' + input('Your username: \n')+ ', ' + input('Your account password: \n') + '\n')
+                    f.close()
+                    
+                    print('*****-----------------******* \n YOUR CREDENTIALS.')
+                    f = open("user.txt", "r")
+                    print(f.read())
+                    print('*************************')
+                    break
+                else:
+                    print('*****-----------------******* \n YOUR CREDENTIALS.')
+                    f = open("user.txt", "r")
+                    print(f.read())
+                    print('*************************')
+                    break
 
         elif short_code == 'lg':
             print('Welcome \n Enter username: ')
@@ -76,17 +86,27 @@ def main():
                 print('\n')
 
             else:
-                print('login successful. \n')
-                print('>>>>>>>>>>>>>> \n Add in your credentials to save them.')
-                f = open("user.txt", "a")
-                f.write(input('\n Your account name : \n') + ', ' + input('Your username: \n')+ ', ' + input('Your account password: \n') + '\n')
-                f.close()
+                print('login successful. \n -------------------------')
+                print('Do you want to view or add new Data? (vw / ad) \n')
                 
-                print('*****-----------------******* \n YOUR CREDENTIALS.')
-                f = open("user.txt", "r")
-                print(f.read())
-                print('*******************************')
-                break
+                key_word = input().lower()
+                if key_word == 'ad':
+                    print('Add in your credentials to save them.\n Your inputs will be saved on the last line..')
+                    f = open("user.txt", "a")
+                    f.write(input('\n Your account name : \n') + ', ' + input('Your username: \n')+ ', ' + input('Your account password: \n') + '\n')
+                    f.close()
+                    
+                    print('*****-----------------******* \n YOUR CREDENTIALS.')
+                    f = open("user.txt", "r")
+                    print(f.read())
+                    print('*************************')
+                    break
+                else:
+                    print('*****-----------------******* \n YOUR CREDENTIALS.')
+                    f = open("user.txt", "r")
+                    print(f.read())
+                    print('*************************')
+                    break
         
         elif short_code == 'ex':
             print('Cancelled. Bye..')
