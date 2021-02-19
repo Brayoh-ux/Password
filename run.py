@@ -53,7 +53,7 @@ def main():
                 if key_word == 'ad':
                     print('Add in your credentials to save them.\n Your inputs will be saved on the last line..')
                     f = open("user.txt", "a")
-                    f.write(input('\n Your account name : \n') + ', ' + input('Your username: \n')+ ', ' + input('Your account password: \n') + '\n')
+                    f.write(input('\n Your account name : \n') + '  , ' + input('Your username: \n')+ '  ,   ' + input('Your account password: \n') + '\n')
                     f.close()
                     
                     print('*****-----------------******* \n YOUR CREDENTIALS.')
