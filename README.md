@@ -8,8 +8,8 @@ On Average, a person has at least 7 different accounts he or she has signed into
 
 
 ## Setup instructions
-On github, fork or clone this project using CLI
-On CLi run the application and folloe instructions as detailed.
+- On github, fork or clone this project using CLI
+- On CLi run the application and folloe instructions as detailed.
 
 ## BDD
 - After you have cloned this app,
